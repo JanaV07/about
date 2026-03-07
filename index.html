@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janarthanan Veeramani - Vice President, Full Stack Engineer | BNY</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #e8e8e8;
+        }
+        
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .skill-tag {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 4px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .skill-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: -30px;
+            width: 2px;
+            background: linear-gradient(180deg, #667eea, #764ba2);
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -4px;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #667eea;
+            border: 2px solid white;
+        }
+        
+        .timeline-item:last-child::before {
+            display: none;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+        }
+
+        .project-card {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            border-left: 4px solid #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <div class="glass-morphism p-8 card-hover">
+                <div class="floating mb-6">
+                    <div class="w-32 h-32 mx-auto bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white text-4xl font-bold shadow-lg">
+                        JV
+                    </div>
+                </div>
+                <h1 class="text-5xl font-bold text-white mb-2">Janarthanan Veeramani</h1>
+                <h2 class="text-2xl text-purple-300 mb-4">Vice President, Full Stack Engineer I</h2>
+                <p class="text-gray-400 text-lg mb-6">An Innovative and Dedicated developer with a strong commitment towards growing technology</p>
+                
+                <div class="flex justify-center flex-wrap gap-4 text-gray-300">
+                    <div class="flex items-center">
+                        <i class="fas fa-building mr-2 text-purple-400"></i>
+                        <span>BNY</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2 text-purple-400"></i>
+                        <span>Florida, United States</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope mr-2 text-purple-400"></i>
+                        <a href="mailto:Janabio93@gmail.com" class="hover:text-purple-300 transition-colors">Janabio93@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="mb-12">
+            <div class="glass-morphism p-8 card-hover">
+                <h3 class="text-3xl font-bold text-white mb-4">About Me</h3>
+                <p class="text-gray-300 leading-relaxed text-lg">
+                    As a Lead Full Stack Engineer at BNY with over 9 years of experience, I specialize in designing and developing 
+                    innovative FinTech applications. I'm passionate about AI projects and modern web technologies, leading teams 
+                    to create robust, scalable solutions that drive business value. My expertise spans from system architecture 
+                    to full-stack development, with a strong focus on cloud-native applications and microservices. I follow 
+                    Scrum Agile Methodology and am responsible for the implementation of projects in production environments 
+                    with post-implementation support.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section class="mb-12">
+            <div class="glass-morphism p-8">
+                <h3 class="text-3xl font-bold text-white mb-8">Professional Journey</h3>
+                
+                <div class="timeline-item">
+                    <div class="bg-white bg-opacity-5 rounded-lg p-6 card-hover border border-white border-opacity-10">
+                        <h4 class="text-xl font-semibold text-white mb-2">Vice President, Full Stack Engineer I</h4>
+                        <p class="text-purple-300 mb-2">BNY • Mar 2024 - Present</p>
+                        <p class="text-gray-300">Leading full-stack development initiatives and AI projects at BNY, Florida. Managing the design and development of FinTech applications using Web technologies.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white bg-opacity-5 rounded-lg p-6 card-hover border border-white border-opacity-10">
+                        <h4 class="text-xl font-semibold text-white mb-2">Lead Full Stack Engineer</h4>
+                        <p class="text-purple-300 mb-2">BNY • Jun 2022 - Feb 2024</p>
+                        <p class="text-gray-300">Project Lead managing the design and development of FinTech applications using Web technologies. Focused on Application Architecture, System Architecture, and Solution Architecture.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white bg-opacity-5 rounded-lg p-6 card-hover border border-white border-opacity-10">
+                        <h4 class="text-xl font-semibold text-white mb-2">Senior Application Developer</h4>
+                        <p class="text-purple-300 mb-2">BNY Mellon Technologies • Nov 2018 - May 2022</p>
+                        <div class="text-gray-300 space-y-2">
+                            <p><strong class="text-purple-300">Roles & Responsibilities:</strong></p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Designing and Creating Integration Services for Financial Services supporting XML, SOAP and REST messaging platform and exposing them through WSO2 API Manager adopted by BNY Mellon API store.</li>
+                                <li>Completing product development as per requirements, scheduling activities, contributing to team meetings, handling troubleshooting, and production problems across multiple environments.</li>
+                                <li>Created an Annotation Driven Java Spring Based plugin enabling Auditing, IBM MQ connectivity, Swagger & Swagger-UI, Generic Exception Handling, and automation of Integration Testing for Java-Based REST APIs.</li>
+                                <li>Successfully Migrated Legacy Web Services to cloud platform by implementing virtualization concepts of Docker.</li>
+                                <li>Maintained source files in version control system – GIT and implemented projects in production with post-implementation support.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white bg-opacity-5 rounded-lg p-6 card-hover border border-white border-opacity-10">
+                        <h4 class="text-xl font-semibold text-white mb-2">Application Developer</h4>
+                        <p class="text-purple-300 mb-2">BNY • Nov 2016 - Nov 2018</p>
+                        <p class="text-gray-300">Application Developer focused on application development and web services implementation. Developed end-to-end REST applications and exposed them as APIs, written multiple Test Cases and generated Swagger Documentation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Projects Section -->
+        <section class="mb-12">
+            <div class="glass-morphism p-8 card-hover">
+                <h3 class="text-3xl font-bold text-white mb-8">Key Projects</h3>
+                
+                <div class="space-y-6">
+                    <div class="project-card rounded-lg p-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-chart-pie text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-2">Fractional Shares Platform</h4>
+                                <p class="text-purple-300 text-sm mb-2">Solution for adapting Fractional Quantity on Equity Shares of US Stocks</p>
+                                <p class="text-gray-300">Designed and developed the platform for maintaining accumulated shares with Spring Integration and Angular. A comprehensive FinTech solution enabling fractional share trading.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card rounded-lg p-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-search text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-2">Message Explorer Tool</h4>
+                                <p class="text-purple-300 text-sm mb-2">Java FXML-based Tool for Web Service Migration</p>
+                                <p class="text-gray-300">Designed and Developed using Java FXML to resolve the dependency of Pershing Web service application from a proprietary Framework to an Open-Source Spring Boot application by automating the generation of Java Bean classes, Meta Data Objects, and API Swagger Documentation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card rounded-lg p-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check-circle text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-2">JSON Validation Framework</h4>
+                                <p class="text-purple-300 text-sm mb-2">JSR Validation for REST APIs</p>
+                                <p class="text-gray-300">Designed and implemented JSR validation such as Required, Length and Type of the Variable to a J2EE Based REST Web Services Framework. Enhanced API reliability and data integrity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-12">
+            <div class="glass-morphism p-8">
+                <h3 class="text-3xl font-bold text-white mb-8">Technical Expertise</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white bg-opacity-5 rounded-lg p-6 border border-white border-opacity-10">
+                        <h4 class="text-xl font-semibold text-white mb-4">
+                            <i class="fas fa-code mr-2 text-purple-400"></i>Programming Languages
+                        </h4>
+                        <div class="flex flex-wrap">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">J2EE</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">XML & JSON</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white bg-opacity-5 rounded-lg p-6 border border-white border-opacity-10">
+                        <h4 class="text-xl font-semibold text-white mb-4">
+                            <i class="fas fa-leaf mr-2 text-purple-400"></i>Spring Ecosystem
+                        </h4>
+                        <div class="flex flex-wrap">
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Spring Security</span>
+                            <span class="skill-tag">Spring Integration</span>
+                            <span class="skill-tag">Spring Data</span>
+                            <span class="skill-tag">Spring Cloud</span>
+                            <span class="skill-tag">Spring REST</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white bg-opacity-5 rounded-lg p-6 border border-white border-opacity-10">
+                        <h4 class="text-xl font-semibold text-white mb-4">
+                            <i class="fas fa-laptop-code mr-2 text-purple-400"></i>Frontend Technologies
+                        </h4>
+                        <div class="flex flex-wrap">
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">JavaFX</span>
+                            <span class="skill-tag">FXML</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white bg-opacity-5 rounded-lg p-6 border border-white border-opacity-10">
+                        <h4 class="text-xl font-semibold text-white mb-4">
+                            <i class="fas fa-database mr-2 text-purple-400"></i>Databases
+                        </h4>
+                        <div class="flex flex-wrap">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Database Design</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white bg-opacity-5 rounded-lg p-6 border border-white border-opacity-10">
+                        <h4 class="text-xl font-semibold text-white mb-4">
+                            <i class="fas fa-cloud mr-2 text-purple-400"></i>Cloud & DevOps
+                        </h4>
+                        <div class="flex flex-wrap">
+                            <span class="skill-tag">Cloud Computing</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">WSO2</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white bg-opacity-5 rounded-lg p-6 border border-white border-opacity-10">
+                        <h4 class="text-xl font-semibold text-white mb-4">
+                            <i class="fas fa-tools mr-2 text-purple-400"></i>Developer Tools
+                        </h4>
+                        <div class="flex flex-wrap">
+                            <span class="skill-tag">IntelliJ</span>
+                            <span class="skill-tag">Eclipse</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">SoapUI</span>
+                            <span class="skill-tag">Swagger</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white bg-opacity-5 rounded-lg p-6 border border-white border-opacity-10">
+                        <h4 class="text-xl font-semibold text-white mb-4">
+                            <i class="fas fa-project-diagram mr-2 text-purple-400"></i>Architecture
+                        </h4>
+                        <div class="flex flex-wrap">
+                            <span class="skill-tag">Application Architecture</span>
+                            <span class="skill-tag">System Architecture</span>
+                            <span class="skill-tag">Solution Architecture</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">SOAP</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white bg-opacity-5 rounded-lg p-6 border border-white border-opacity-10">
+                        <h4 class="text-xl font-semibold text-white mb-4">
+                            <i class="fas fa-lightbulb mr-2 text-purple-400"></i>Core Abilities
+                        </h4>
+                        <div class="flex flex-wrap">
+                            <span class="skill-tag">Quick Learner</span>
+                            <span class="skill-tag">Multi-Tasking</span>
+                            <span class="skill-tag">Leadership</span>
+                            <span class="skill-tag">Client Interaction</span>
+                            <span class="skill-tag">Agile Methodology</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white bg-opacity-5 rounded-lg p-6 border border-white border-opacity-10">
+                        <h4 class="text-xl font-semibold text-white mb-4">
+                            <i class="fas fa-brain mr-2 text-purple-400"></i>AI & Innovation
+                        </h4>
+                        <div class="flex flex-wrap">
+                            <span class="skill-tag">AI Projects</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">FinTech Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mb-12">
+            <div class="glass-morphism p-8 card-hover">
+                <h3 class="text-3xl font-bold text-white mb-6">Education & Certifications</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-semibold text-purple-300 mb-4">Education</h4>
+                        <div class="bg-white bg-opacity-5 rounded-lg p-4 border border-white border-opacity-10">
+                            <h5 class="font-semibold text-white">B.E Computer Science Engineering</h5>
+                            <p class="text-gray-400">PSNA College of Engineering & Technology, Dindigul</p>
+                            <p class="text-purple-300 text-sm">Passed out with 7.07/10 CGPA</p>
+                        </div>
+                        <div class="bg-white bg-opacity-5 rounded-lg p-4 border border-white border-opacity-10">
+                            <h5 class="font-semibold text-white">Higher Secondary Certificate</h5>
+                            <p class="text-gray-400">Jaigopal Garodia National Hr. Sec. School, Tambaram Sanatorium</p>
+                            <p class="text-purple-300 text-sm">Passed out with 73.5%</p>
+                        </div>
+                        <div class="bg-white bg-opacity-5 rounded-lg p-4 border border-white border-opacity-10">
+                            <h5 class="font-semibold text-white">Secondary School Level Certificate</h5>
+                            <p class="text-gray-400">Government Boys Hr. Sec School, Chrompet</p>
+                            <p class="text-purple-300 text-sm">Passed out with 83.4%</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-semibold text-purple-300 mb-4">Certifications</h4>
+                        <div class="bg-white bg-opacity-5 rounded-lg p-4 border border-white border-opacity-10">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-certificate text-purple-400"></i>
+                                <span class="text-white">Oracle Certification for Java SE6 Programmer</span>
+                            </div>
+                        </div>
+                        <div class="bg-white bg-opacity-5 rounded-lg p-4 border border-white border-opacity-10">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-certificate text-purple-400"></i>
+                                <span class="text-white">Department of Information Technology Certified Programmer in C & C++</span>
+                            </div>
+                        </div>
+                        <div class="bg-white bg-opacity-5 rounded-lg p-4 border border-white border-opacity-10">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-certificate text-purple-400"></i>
+                                <span class="text-white">Cambridge Business English Certificate Preliminary (Level B1)</span>
+                            </div>
+                        </div>
+                        <div class="bg-white bg-opacity-5 rounded-lg p-4 border border-white border-opacity-10">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-certificate text-purple-400"></i>
+                                <span class="text-white">First Class with Distinction in Typewriting English (Senior & Lower Grade)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Focus Section -->
+        <section class="mb-12">
+            <div class="glass-morphism p-8 card-hover">
+                <h3 class="text-3xl font-bold text-white mb-4">Current Focus</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg p-6 text-white">
+                        <i class="fas fa-robot text-3xl mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-2">AI Projects</h4>
+                        <p class="text-purple-100">Leading multiple active AI initiatives at BNY, leveraging cutting-edge technologies to drive innovation in financial services and transform banking experiences.</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg p-6 text-white">
+                        <i class="fas fa-chart-line text-3xl mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-2">FinTech Innovation</h4>
+                        <p class="text-blue-100">Architecting and developing next-generation financial technology solutions that transform banking experiences and enable seamless digital transactions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Info Section -->
+        <section class="mb-12">
+            <div class="glass-morphism p-8 card-hover">
+                <h3 class="text-3xl font-bold text-white mb-6">Personal Details</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-gray-300">
+                    <div>
+                        <span class="text-purple-300 font-semibold">Date of Birth:</span>
+                        <p>07-06-1993</p>
+                    </div>
+                    <div>
+                        <span class="text-purple-300 font-semibold">Gender:</span>
+                        <p>Male</p>
+                    </div>
+                    <div>
+                        <span class="text-purple-300 font-semibold">Nationality:</span>
+                        <p>Indian</p>
+                    </div>
+                    <div>
+                        <span class="text-purple-300 font-semibold">Languages:</span>
+                        <p>Tamil, English</p>
+                    </div>
+                </div>
+                <div class="mt-4 text-gray-400">
+                    <span class="text-purple-300 font-semibold">Parents:</span>
+                    <p>Mr. D. Veeramani, Mrs. V. Saraswathi</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internship Section -->
+        <section class="mb-12">
+            <div class="glass-morphism p-8 card-hover">
+                <h3 class="text-3xl font-bold text-white mb-4">Internship</h3>
+                <div class="bg-white bg-opacity-5 rounded-lg p-6 border border-white border-opacity-10">
+                    <h4 class="text-xl font-semibold text-white mb-2">Inautix Technologies</h4>
+                    <p class="text-purple-300 mb-2">Feb 2016 - May 2016</p>
+                    <p class="text-gray-300">Software Development Internship focusing on practical application development and industry best practices.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="text-center">
+            <div class="glass-morphism p-8">
+                <h3 class="text-3xl font-bold text-white mb-6">Let's Connect</h3>
+                <p class="text-gray-300 mb-6 text-lg">Open to discussing technology, architecture, and innovative AI projects</p>
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="https://www.linkedin.com/in/jana-v" class="text-white hover:text-purple-300 transition-colors">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://github.com/janav07" class="text-white hover:text-purple-300 transition-colors">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="mailto:Janabio93@gmail.com" class="text-white hover:text-purple-300 transition-colors">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    <p>I, hereby declare that the information furnished above is true to the best of my knowledge.</p>
+                    <p class="mt-4 font-semibold text-white">Janarthanan Veeramani</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add intersection observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
